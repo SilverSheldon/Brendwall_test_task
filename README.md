@@ -31,10 +31,10 @@ python manage.py runserver
 ### Возможности проекта
 1. Эндпоинт на фронте:
 
-    http://localhost:8000/api/v1.0/add_product/
+    http://127.0.0.1:8000/api/v1.0/add_product/
 
 2. При желании погонять через Postman (или Browsable API от DRF) можно использовать следующий эндпоинт:
 
-    http://localhost:8000/api/v1.0/products/
+    http://127.0.0.1:8000/api/v1.0/products/
 
     Собственно, сюда же и делаются fetch-запросы.
