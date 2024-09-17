@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<main>
+    <form action="" method="POST" id="product-form">
+        {% csrf_token %}
+        <fieldset>
+            <legend>{{ legend }}</legend>
+            {{ form.as_p }}
+            <button type="submit">Отправить</button>
+        </fieldset>
+    </form>
+    <table>
+        <thead>
+            <tr>
+                <th>Название</th>
+                <th>Описание</th>
+                <th>Цена</th>
+            </tr>
+        </thead>
+        <tbody id="products-list">
+            <!-- Продукты будут добавлены сюда -->
+        </tbody>
+    </table>
+</main>
+
+{% endblock %}
